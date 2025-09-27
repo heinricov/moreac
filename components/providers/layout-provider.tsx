@@ -9,18 +9,16 @@ export default function LayoutProvider({
 }) {
   return (
     <>
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <NavHeader />
-          {children}
-          <NavFooter />
-        </ThemeProvider>
-      </body>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <NavHeader />
+        {children}
+        <NavFooter />
+      </ThemeProvider>
     </>
   );
 }

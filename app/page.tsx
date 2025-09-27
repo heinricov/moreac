@@ -8,8 +8,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <FeaturesSection />
-      <SectionProduct maxItems={3} />
+      <SectionProduct />
       <StatsSection />
       <CtaSection />
     </>

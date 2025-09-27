@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -29,17 +30,16 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleLihatClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
     const productSlug = product.name.toLowerCase().replace(/\s+/g, "-");
     router.push(`/product/${productSlug}`);
   };
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      minimumFractionDigits: 0,
-    }).format(price);
+  const handleBeliClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    // TODO: Implementasi logika pembelian
+    console.log("Beli produk:", product.name);
   };
 
   return (
@@ -50,7 +50,6 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={handleClick}
     >
       <CardContent className="p-0">
         <div className="relative aspect-video overflow-hidden">
@@ -61,16 +60,35 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
             className="object-cover transition-transform duration-300 group-hover:scale-110"
           />
 
-          {/* Overlay dengan description saat hover */}
+          {/* Overlay dengan description dan buttons saat hover */}
           <div
             className={cn(
-              "absolute inset-0 bg-black/60 flex items-center justify-center p-4 transition-opacity duration-300",
+              "absolute inset-0 bg-black/60 flex flex-col items-center justify-center p-4 transition-opacity duration-300",
               isHovered ? "opacity-100" : "opacity-0"
             )}
           >
-            <p className="text-white text-sm text-center leading-relaxed">
+            <p className="text-white text-sm text-center leading-relaxed mb-6">
               {product.description}
             </p>
+
+            {/* Action Buttons */}
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleLihatClick}
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white"
+              >
+                Lihat
+              </Button>
+              <Button
+                size="sm"
+                onClick={handleBeliClick}
+                className="bg-primary hover:bg-primary/90"
+              >
+                Beli
+              </Button>
+            </div>
           </div>
 
           {/* Badge category */}
@@ -79,7 +97,7 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
               {product.category}
             </span>
           </div>
-          <div className="absolute top-3 right-3">
+          <div className="absolute bottom-3 right-3">
             <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
               {product.name}
             </h3>
