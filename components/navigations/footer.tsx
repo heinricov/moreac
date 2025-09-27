@@ -6,18 +6,6 @@ const links = [
     group: "Product",
     items: [
       {
-        title: "Features",
-        href: "#",
-      },
-      {
-        title: "Solution",
-        href: "#",
-      },
-      {
-        title: "Customers",
-        href: "#",
-      },
-      {
         title: "Pricing",
         href: "#",
       },
@@ -35,14 +23,6 @@ const links = [
     group: "Company",
     items: [
       {
-        title: "About",
-        href: "#",
-      },
-      {
-        title: "Careers",
-        href: "#",
-      },
-      {
         title: "Blog",
         href: "#",
       },
@@ -52,10 +32,6 @@ const links = [
       },
       {
         title: "Contact",
-        href: "#",
-      },
-      {
-        title: "Help",
         href: "#",
       },
     ],
@@ -73,10 +49,6 @@ const links = [
       },
       {
         title: "Cookies",
-        href: "#",
-      },
-      {
-        title: "Security",
         href: "#",
       },
     ],

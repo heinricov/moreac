@@ -67,9 +67,9 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
               isHovered ? "opacity-100" : "opacity-0"
             )}
           >
-            <p className="text-white text-sm text-center leading-relaxed mb-6">
-              {product.description}
-            </p>
+            <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+              {product.name}
+            </h3>
 
             {/* Action Buttons */}
             <div className="flex gap-3">
@@ -96,11 +96,6 @@ export const CardProduct = ({ product, className }: CardProductProps) => {
             <span className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full">
               {product.category}
             </span>
-          </div>
-          <div className="absolute bottom-3 right-3">
-            <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-              {product.name}
-            </h3>
           </div>
         </div>
       </CardContent>
