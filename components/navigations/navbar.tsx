@@ -46,7 +46,7 @@ export const NavHeader = () => {
               </Link>
 
               <div className="flex items-center gap-2">
-                <ThemeToggleButton />
+                <ThemeToggleButton className="lg:hidden" />
                 <button
                   onClick={() => setMenuState(!menuState)}
                   aria-label={menuState == true ? "Close Menu" : "Open Menu"}
