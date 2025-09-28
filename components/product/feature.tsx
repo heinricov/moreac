@@ -7,36 +7,71 @@ import {
 } from "@/components/ui/accordion";
 import {
   ChartBarIncreasingIcon,
+  Component,
   Database,
+  FileJson,
   Fingerprint,
+  Globe,
   IdCard,
+  Layers,
+  MonitorSmartphone,
 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Features() {
-  type ImageKey = "item-1" | "item-2" | "item-3" | "item-4";
-  const [activeItem, setActiveItem] = useState<ImageKey>("item-1");
+  type ImageKey =
+    | "komponen-yang-digunakan"
+    | "halaman"
+    | "nextjs-seo"
+    | "responsive-website";
+  const [activeItem, setActiveItem] = useState<ImageKey>(
+    "komponen-yang-digunakan"
+  );
 
-  const images = {
-    "item-1": {
+  const features = [
+    {
+      key: "komponen-yang-digunakan",
+      title: "Komponen yang digunakan",
+      description:
+        "Teridiri dari berbagai komponen yang digunakan pada masing - masing halaman, komponen yang mudah dikelola dan diubah.",
       image: "/charts.png",
-      alt: "Database visualization",
+      icon: <Component className="size-4" />,
     },
-    "item-2": {
+    {
+      key: "halaman",
+      title: "Halaman",
+      description:
+        "Teridiri dari berbagai halaman yang digunakan pada masing - masing halaman, halaman yang mudah dikelola dan diubah.",
       image: "/music.png",
-      alt: "Security authentication",
+      icon: <Layers className="size-4" />,
     },
-    "item-3": {
+    {
+      key: "nextjs-seo",
+      title: "NextJS SEO",
+      description:
+        "Teridiri dari berbagai NextJS SEO yang digunakan pada masing - masing halaman, NextJS SEO yang mudah dikelola dan diubah.",
       image: "/mail2.png",
-      alt: "Identity management",
+      icon: <Globe className="size-4" />,
     },
-    "item-4": {
+    {
+      key: "responsive-website",
+      title: "Responsive Website",
+      description:
+        "Teridiri dari berbagai Responsive Website yang digunakan pada masing - masing halaman, Responsive Website yang mudah dikelola dan diubah.",
       image: "/payments.png",
-      alt: "Analytics dashboard",
+      icon: <MonitorSmartphone className="size-4" />,
     },
-  };
+    {
+      key: "json-data",
+      title: "Json Data",
+      description:
+        "Teridiri dari berbagai Json Data yang digunakan pada masing - masing halaman, Json Data yang mudah dikelola dan diubah.",
+      image: "/json.png",
+      icon: <FileJson className="size-4" />,
+    },
+  ];
 
   return (
     <section className="py-12 md:py-20 lg:py-32">
@@ -58,58 +93,17 @@ export default function Features() {
             onValueChange={(value) => setActiveItem(value as ImageKey)}
             className="w-full"
           >
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <Database className="size-4" />
-                  Database Visualization
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lyra is evolving to be more than just the models. It supports an
-                entire to the APIs and platforms helping developers and
-                businesses innovate.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <Fingerprint className="size-4" />
-                  Advanced Authentication
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lyra is evolving to be more than just the models. It supports an
-                entire to the APIs and platforms helping developers and
-                businesses innovate.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <IdCard className="size-4" />
-                  Identity Management
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lyra is evolving to be more than just the models. It supports an
-                entire to the APIs and platforms helping developers and
-                businesses innovate.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <ChartBarIncreasingIcon className="size-4" />
-                  Analytics Dashboard
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lyra is evolving to be more than just the models. It supports an
-                entire to the APIs and platforms helping developers and
-                businesses innovate.
-              </AccordionContent>
-            </AccordionItem>
+            {features.map((feature) => (
+              <AccordionItem key={feature.key} value={feature.key}>
+                <AccordionTrigger>
+                  <div className="flex items-center gap-2 text-base">
+                    {feature.icon}
+                    {feature.title}
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>{feature.description}</AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
 
           <div className="hidden md:block">
@@ -126,9 +120,15 @@ export default function Features() {
                     className="size-full overflow-hidden rounded-2xl border bg-zinc-900 shadow-md"
                   >
                     <Image
-                      src={images[activeItem].image}
+                      src={
+                        features.find((f) => f.key === activeItem)?.image ||
+                        "/placeholder.png"
+                      }
                       className="size-full object-cover object-left-top dark:mix-blend-lighten"
-                      alt={images[activeItem].alt}
+                      alt={
+                        features.find((f) => f.key === activeItem)?.title ||
+                        "Feature image"
+                      }
                       width={1207}
                       height={929}
                     />

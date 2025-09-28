@@ -27,22 +27,22 @@ export default function HeroSection({
             <div className="rotate-x-6 -skew-2">
               <div className="aspect-88/36 relative">
                 <Image
-                  src="/mail-upper.png"
+                  src="/product/product-1.png"
                   className="absolute inset-0 z-10"
                   alt="payments illustration dark"
                   width={2797}
                   height={1137}
                 />
                 <Image
-                  src="/mail-back.png"
+                  src="/product/product-1.png"
                   className="hidden dark:block"
                   alt="payments illustration dark"
                   width={2797}
                   height={1137}
                 />
                 <Image
-                  src="/mail-back-light.png"
-                  className="dark:hidden"
+                  src="/product/product-1.png"
+                  className="dark:hidden rounded-lg"
                   alt="payments illustration light"
                   width={2797}
                   height={1137}
