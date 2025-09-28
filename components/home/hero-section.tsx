@@ -4,7 +4,16 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight, CirclePlay } from "lucide-react";
 import Image from "next/image";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  title?: string;
+  description?: string;
+}
+
+export default function HeroSection({ title, description }: HeroSectionProps) {
+  const DEFAULT_TITLE = "Buat Usaha Anda Lebih Mudah Di Temukan";
+  const DEFAULT_DESCRIPTION =
+    "Explore a collection of Shadcn UI blocks and components, ready to preview and copy. Streamline your development workflow with easy-to-implement examples.";
+
   return (
     <>
       <main className="overflow-hidden">
@@ -14,17 +23,16 @@ export default function HeroSection() {
               <div className="md:w-1/2">
                 <div>
                   <h1 className="max-w-md text-balance text-5xl font-medium md:text-6xl">
-                    Hujudkan Website Untuk Usaha Anda
+                    {title || DEFAULT_TITLE}
                   </h1>
                   <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">
-                    Kami membantu Anda membuat website yang menarik dan
-                    profesional untuk usaha Anda.
+                    {description || DEFAULT_DESCRIPTION}
                   </p>
 
                   <div className="flex items-center gap-3">
                     <Button asChild size="lg" className="pr-4.5">
                       <Link href="#link">
-                        <span className="text-nowrap">Mulai Sekarang</span>
+                        <span className="text-nowrap">Tempalte</span>
                         <ChevronRight className="opacity-50" />
                       </Link>
                     </Button>
@@ -37,53 +45,9 @@ export default function HeroSection() {
                     >
                       <Link href="#link">
                         <CirclePlay className="fill-primary/25 stroke-primary" />
-                        <span className="text-nowrap">Lihat Sample</span>
+                        <span className="text-nowrap">Custom Website</span>
                       </Link>
                     </Button>
-                  </div>
-                </div>
-
-                <div className="mt-10">
-                  <p className="text-muted-foreground">
-                    Teknologi yang digunakan :
-                  </p>
-                  <div className="mt-6 grid max-w-sm grid-cols-3 gap-6">
-                    <div className="flex">
-                      <img
-                        className="h-4 w-fit"
-                        src="/nextjs.png"
-                        alt="NextJS"
-                        height="16"
-                        width="auto"
-                      />
-                    </div>
-                    <div className="flex">
-                      <img
-                        className="h-5 w-fit"
-                        src="/supabase.png"
-                        alt="Supabase"
-                        height="20"
-                        width="auto"
-                      />
-                    </div>
-                    <div className="flex">
-                      <img
-                        className="h-5 w-fit"
-                        src="/cursor.png"
-                        alt="Cursor"
-                        height="20"
-                        width="auto"
-                      />
-                    </div>
-                    <div className="flex">
-                      <img
-                        className="h-4 w-fit"
-                        src="https://html.tailus.io/blocks/customers/github.svg"
-                        alt="GitHub Logo"
-                        height="16"
-                        width="auto"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>

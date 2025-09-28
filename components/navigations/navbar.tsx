@@ -10,8 +10,9 @@ import ThemeToggleButton from "./button-theme";
 const menuItems = [
   { name: "Features", href: "#link" },
   { name: "Product", href: "/products" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Contact", href: "/contact" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "About", href: "/about" },
 ];
 
 export const NavHeader = () => {
