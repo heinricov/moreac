@@ -9,7 +9,6 @@ import ThemeToggleButton from "./button-theme";
 
 const menuItems = [
   { name: "Features", href: "#link" },
-  { name: "Product", href: "/products" },
   { name: "Contact", href: "/contact" },
   { name: "Pricing", href: "/pricing" },
   { name: "About", href: "/about" },
@@ -89,9 +88,9 @@ export const NavHeader = () => {
                   ))}
                 </ul>
               </div>
-              <ThemeToggleButton />
+              <ThemeToggleButton className="hidden" />
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                {/* <Button
+                <Button
                   asChild
                   variant="ghost"
                   size="sm"
@@ -109,7 +108,7 @@ export const NavHeader = () => {
                   <Link href="#">
                     <span>Sign Up</span>
                   </Link>
-                </Button> */}
+                </Button>
                 <Button
                   asChild
                   size="sm"

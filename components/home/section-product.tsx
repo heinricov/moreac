@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import CardProduct from "../product/card-product";
+import Link from "next/link";
 
 interface Product {
   id: string;
@@ -40,12 +41,11 @@ export default function SectionProduct({
       title: "Getting Started with shadcn/ui Components",
       summary:
         "Learn how to quickly integrate and customize shadcn/ui components in your Next.js projects. We'll cover installation, theming, and best practices for building modern interfaces.",
-      label: "Tutorial",
+      label: "Company Profile",
       author: "Sarah Chen",
       published: "1 Jan 2024",
       url: "https://shadcnblocks.com",
-      image:
-        "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      image: "/product/product-1.png",
     },
     {
       id: "post-2",

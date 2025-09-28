@@ -55,22 +55,22 @@ export default function HeroSection({
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <img
-                className="h-4 w-fit dark:invert"
-                src="https://html.tailus.io/blocks/customers/github.svg"
+                className="h-6 w-fit dark:invert"
+                src="/tech/github-light.png"
                 alt="GitHub Logo"
-                height="16"
+                height="24"
                 width="auto"
               />
             </div>
             <p className="text-muted-foreground text-sm">
-              It supports an entire helping developers and innovate.
+              Version Control System untuk mengelola perubahan kode.
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <img
-                className="h-6 w-fit dark:invert"
-                src="https://html.tailus.io/blocks/customers/openai.svg"
+                className="h-4 mt-1 w-fit dark:invert"
+                src="/tech/vercel-light.png"
                 alt="OpenAI Logo"
                 height="24"
                 width="auto"
@@ -84,7 +84,7 @@ export default function HeroSection({
             <div className="flex items-center gap-2">
               <img
                 className="h-4 w-fit dark:invert"
-                src="https://html.tailus.io/blocks/customers/tailwindcss.svg"
+                src="/tech/tailwind-light.png"
                 alt="Tailwind CSS Logo"
                 height="16"
                 width="auto"
@@ -97,8 +97,8 @@ export default function HeroSection({
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <img
-                className="h-5 w-fit dark:invert"
-                src="https://html.tailus.io/blocks/customers/vercel.svg"
+                className="h-4 w-fit dark:invert"
+                src="/tech/nextjs-light.png"
                 alt="Vercel Logo"
                 height="20"
                 width="auto"

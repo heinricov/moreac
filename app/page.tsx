@@ -8,7 +8,6 @@ export default function Home() {
     <>
       <HeroSection />
       <SectionProduct />
-      <StatsSection />
       <CtaSection />
     </>
   );

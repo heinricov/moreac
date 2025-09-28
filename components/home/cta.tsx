@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function CtaSection() {
   return (
     <section>
-      <div className="bg-background py-12">
+      <div className="bg-muted/50 py-12">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-foreground max-w-lg text-balance text-3xl font-semibold lg:text-4xl">
             <span className="text-muted-foreground">

@@ -1,4 +1,4 @@
-import { Logo03, Logo04, Logo05, Logo07 } from "@/components/logos";
+import { Guthub, NextJs, Tailwind, Vercel } from "@/components/logos";
 
 export default function TechUsed() {
   return (
@@ -14,10 +14,10 @@ export default function TechUsed() {
       </div>
 
       <div className="flex max-w-sm flex-wrap lg:justify-end gap-6 lg:gap-10 *:h-8 sm:*:h-10 md:*:h-8 lg:*:h-10">
-        <Logo03 />
-        <Logo04 />
-        <Logo05 />
-        <Logo07 />
+        <NextJs />
+        <Guthub />
+        <Tailwind />
+        <Vercel />
       </div>
     </div>
   );

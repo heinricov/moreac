@@ -1,6 +1,5 @@
 interface Feature {
   title: string;
-  description: string;
   image: string;
 }
 
@@ -15,34 +14,23 @@ interface Feature166Props {
 
 export default function BentoImages({
   heading = "Gallery",
-  description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
+
   feature1 = {
     title: "UI/UX Design",
-    description:
-      "Creating intuitive user experiences with modern interface design principles and user-centered methodologies.",
-    image:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+
+    image: "/product/product-1.png",
   },
   feature2 = {
     title: "Responsive Development",
-    description:
-      "Building websites that look and function perfectly across all devices and screen sizes.",
-    image:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    image: "/product/product-1-a.png",
   },
   feature3 = {
     title: "Brand Integration",
-    description:
-      "Seamlessly incorporating your brand identity into every aspect of your website's design.",
-    image:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    image: "/product/product-1-b.png",
   },
   feature4 = {
     title: "Performance Optimization",
-    description:
-      "Ensuring fast loading times and smooth performance through optimized code and assets.",
-    image:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    image: "/product/product-1-c.png",
   },
 }: Feature166Props) {
   return (

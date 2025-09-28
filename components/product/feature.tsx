@@ -106,34 +106,17 @@ export default function Features() {
             ))}
           </Accordion>
 
-          <div className="hidden md:block">
+          <div className="">
             <div className="bg-background relative flex overflow-hidden rounded-3xl border p-2">
               <div className="w-15 absolute inset-0 right-0 ml-auto border-l bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_8px)]"></div>
               <div className="aspect-76/59 bg-background relative w-[calc(3/4*100%+3rem)] rounded-2xl">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={`${activeItem}-id`}
-                    initial={{ opacity: 0, y: 6, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 6, scale: 0.98 }}
-                    transition={{ duration: 0.2 }}
-                    className="size-full overflow-hidden rounded-2xl border bg-zinc-900 shadow-md"
-                  >
-                    <Image
-                      src={
-                        features.find((f) => f.key === activeItem)?.image ||
-                        "/placeholder.png"
-                      }
-                      className="size-full object-cover object-left-top dark:mix-blend-lighten"
-                      alt={
-                        features.find((f) => f.key === activeItem)?.title ||
-                        "Feature image"
-                      }
-                      width={1207}
-                      height={929}
-                    />
-                  </motion.div>
-                </AnimatePresence>
+                <Image
+                  src="/product/product-1-d.png"
+                  className="size-full object-cover object-left-top dark:mix-blend-lighten"
+                  alt="Feature image"
+                  width={1207}
+                  height={929}
+                />
               </div>
               {/* Border beam effect removed - can be added later if needed */}
             </div>
