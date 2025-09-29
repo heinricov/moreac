@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-import { Cpu, Lock, Sparkles, Zap } from "lucide-react";
+import { Cpu, Github, Lock, Sparkles, Zap } from "lucide-react";
+import { NextJS, TailwindCSS, Vercel } from "./logo-tech";
 
 export default function HeroSection({
   title,
@@ -54,39 +55,40 @@ export default function HeroSection({
         <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Zap className="size-4" />
-              <h3 className="text-sm font-medium">Faaast</h3>
+              <Vercel className="size-4" />
+              <h3 className="text-sm font-medium">Vercel</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              It supports an entire helping developers and innovate.
+              Digunakan untuk deploy website.
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <Cpu className="size-4" />
-              <h3 className="text-sm font-medium">Powerful</h3>
+              <Github className="size-4" />
+              <h3 className="text-sm font-medium">Github</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              It supports an entire helping developers and businesses.
+              Digunakan sebagai version control system untuk mengelola
+              repository.
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <Lock className="size-4" />
-              <h3 className="text-sm font-medium">Security</h3>
+              <TailwindCSS className="size-4" />
+              <h3 className="text-sm font-medium">Tailwind CSS</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              It supports an helping developers businesses innovate.
+              Digunakan untuk styling website.
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <Sparkles className="size-4" />
+              <NextJS className="size-4" />
 
-              <h3 className="text-sm font-medium">AI Powered</h3>
+              <h3 className="text-sm font-medium">NextJS</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              It supports an helping developers businesses innovate.
+              Digunakan untuk membuat website yang lebih cepat dan lebih baik.
             </p>
           </div>
         </div>
