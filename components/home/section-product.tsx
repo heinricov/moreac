@@ -75,7 +75,7 @@ export default function SectionProduct({
 }: ProductProps) {
   return (
     <section className="py-32">
-      <div className="mx-auto max-w-7xl flex flex-col items-center gap-16 lg:px-16">
+      <div className="mx-auto max-w-7xl flex flex-col items-center gap-16 px-4 lg:px-16">
         <div className="text-center">
           <h2 className="mb-3 text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
             {heading}
