@@ -86,7 +86,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid gap-12 sm:px-12 md:grid-cols-2 lg:gap-20 lg:px-0">
+        <div className="grid gap-12 sm:px-12 md:grid-cols-1 lg:gap-20 lg:px-0">
           <Accordion
             type="single"
             value={activeItem}
@@ -106,7 +106,7 @@ export default function Features() {
             ))}
           </Accordion>
 
-          <div className="">
+          {/* <div className="">
             <div className="bg-background relative flex overflow-hidden rounded-3xl border p-2">
               <div className="w-15 absolute inset-0 right-0 ml-auto border-l bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_8px)]"></div>
               <div className="aspect-76/59 bg-background relative w-[calc(3/4*100%+3rem)] rounded-2xl">
@@ -118,9 +118,8 @@ export default function Features() {
                   height={929}
                 />
               </div>
-              {/* Border beam effect removed - can be added later if needed */}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

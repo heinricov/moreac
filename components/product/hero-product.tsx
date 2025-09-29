@@ -91,6 +91,16 @@ export default function HeroSection({
               Digunakan untuk membuat website yang lebih cepat dan lebih baik.
             </p>
           </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <NextJS className="size-4" />
+
+              <h3 className="text-sm font-medium">NextJS</h3>
+            </div>
+            <p className="text-muted-foreground text-sm">
+              Digunakan untuk membuat website yang lebih cepat dan lebih baik.
+            </p>
+          </div>
         </div>
       </div>
     </section>
