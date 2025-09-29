@@ -1,9 +1,8 @@
 import HeroProduct from "@/components/product/hero-product";
 import Features from "@/components/product/feature";
 import React from "react";
-import TemplateUse from "@/components/product/template-use";
 import BentoImages from "@/components/product/bento-images";
-import { Book, Download, Share2 } from "lucide-react";
+import { CircleCheck, Download, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function page() {
@@ -17,6 +16,7 @@ export default function page() {
               <div className="border-border bg-card mb-6 overflow-hidden rounded-lg border shadow-sm">
                 <div className="border-border bg-muted/50 border-b px-5 py-4">
                   <h3 className="flex items-center text-sm font-semibold">
+                    <CircleCheck className="text-muted-foreground mr-2.5 size-3.5" />
                     Company Profile
                   </h3>
                 </div>
