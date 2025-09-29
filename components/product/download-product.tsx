@@ -44,7 +44,7 @@ export const DownloadProduct = () => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-1 order-first lg:order-last">
+          <aside className="lg:col-span-1 order-first lg:order-last hidden lg:block">
             <div className="sticky top-4 sm:top-6 md:top-8 space-y-4 sm:space-y-6">
               {/* Template Info Card */}
               <Card className="border-0 shadow-xl bg-card/50 backdrop-blur-sm">
