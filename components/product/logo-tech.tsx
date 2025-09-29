@@ -48,3 +48,27 @@ export const TailwindCSS = ({ className }: { className?: string }) => {
     </>
   );
 };
+
+export const VsCode = ({ className }: { className?: string }) => {
+  return (
+    <>
+      <img
+        src="https://cdn.brandfetch.io/idIkI_7uw6/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1756787305385"
+        alt="VsCode"
+        className={cn("size-5 dark:invert", className)}
+      />
+    </>
+  );
+};
+
+export const NodeJs = ({ className }: { className?: string }) => {
+  return (
+    <>
+      <img
+        src="https://cdn.brandfetch.io/id7JRtQEAa/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1756481464114"
+        alt="NodeJs"
+        className={cn("size-5 dark:invert", className)}
+      />
+    </>
+  );
+};
