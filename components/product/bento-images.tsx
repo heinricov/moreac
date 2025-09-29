@@ -34,9 +34,9 @@ export default function BentoImages({
   },
 }: Feature166Props) {
   return (
-    <section className="py-32">
+    <section className="py-10 px-5">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-24 flex flex-col items-center gap-6">
+        <div className="mb-4 flex flex-col items-center gap-6">
           <h1 className="text-center text-3xl font-semibold lg:max-w-3xl lg:text-5xl">
             {heading}
           </h1>

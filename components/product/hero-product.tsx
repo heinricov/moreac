@@ -11,8 +11,8 @@ export default function HeroSection({
   description?: string;
 }) {
   return (
-    <section className="overflow-hidden py-16 md:py-32">
-      <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-12">
+    <section className="overflow-hidden py-10 md:py-10">
+      <div className="mx-auto max-w-6xl space-y-2 px-6 md:space-y-5">
         <div className="relative z-10 max-w-2xl">
           <h2 className="text-4xl font-semibold lg:text-5xl">
             {title || "Title Product "}
