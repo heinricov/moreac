@@ -17,8 +17,7 @@ export default function page() {
               <div className="border-border bg-card mb-6 overflow-hidden rounded-lg border shadow-sm">
                 <div className="border-border bg-muted/50 border-b px-5 py-4">
                   <h3 className="flex items-center text-sm font-semibold">
-                    <Book className="text-muted-foreground mr-2.5 size-3.5" />
-                    Whitepaper
+                    Company Profile
                   </h3>
                 </div>
                 <div className="p-5">
@@ -26,40 +25,96 @@ export default function page() {
                     <p>The Complete Guide to Launching Your Startup</p>
                   </div>
                 </div>
+                <div className="p-5">
+                  <h3 className="text-sm">Teknologi yang Digunakan</h3>
+                  <ul className="flex items-center gap-2">
+                    <li>
+                      <a
+                        href="#"
+                        className="border-border bg-muted/50 hover:bg-muted flex size-10 items-center justify-center rounded-full border transition-colors"
+                        aria-label="Share on Instagram"
+                      >
+                        <img
+                          src="https://cdn.brandfetch.io/idDpCfN4VD/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1726463494344"
+                          alt="Vercel"
+                          className="size-5 dark:invert"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="border-border bg-muted/50 hover:bg-muted flex size-10 items-center justify-center rounded-full border transition-colors"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <img
+                          src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1719469980739"
+                          alt="Github"
+                          className="size-5 dark:invert"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="border-border bg-muted/50 hover:bg-muted flex size-10 items-center justify-center rounded-full border transition-colors"
+                        aria-label="Share on Product Hunt"
+                      >
+                        <img
+                          src="https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1bxid64Mup7aczewSAYMX&t=1714556221292"
+                          alt="NextJS"
+                          className="size-5 dark:invert"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="border-border bg-muted/50 hover:bg-muted flex size-10 items-center justify-center rounded-full border transition-colors"
+                        aria-label="Share on Twitter"
+                      >
+                        <img
+                          src="https://cdn.brandfetch.io/idMNEQh7-0/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1687779047045"
+                          alt="Tailwind CSS"
+                          className="size-5 "
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="border-border bg-card mb-6 overflow-hidden rounded-lg border shadow-sm">
                 <div className="border-border bg-muted/50 border-b px-5 py-4">
                   <h3 className="flex items-center text-sm font-semibold">
                     <Download className="text-muted-foreground mr-2.5 size-3.5" />
-                    Download Options
+                    Download Version
                   </h3>
                 </div>
                 <div className="p-5">
                   <div className="space-y-4">
-                    <p className="text-muted-foreground text-sm">
-                      Enjoy this guide? Download it for offline reading or
-                      sharing.
-                    </p>
                     <div className="flex flex-col space-y-2">
                       <Button
                         className="w-full justify-between"
                         variant="default"
                       >
-                        PDF Format
+                        Version 1.0 (FIX)
                         <Download className="ml-2 size-4" />
                       </Button>
+                      <p className="text-muted-foreground text-xs">
+                        Versi standar yang sudah di fix (JSON Data).
+                      </p>
                       <Button
                         className="w-full justify-between"
                         variant="outline"
                       >
-                        Print Version
+                        Version 1.0 (BETA)
                         <Download className="ml-2 size-4" />
                       </Button>
+                      <p className="text-muted-foreground text-xs">
+                        Versi beta yang belum di fix (JSON Data).
+                      </p>
                     </div>
-                    <p className="text-muted-foreground mt-4 text-center text-xs">
-                      Read time: 5 minutes
-                    </p>
                   </div>
                 </div>
               </div>

@@ -54,27 +54,17 @@ export default function HeroSection({
         <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <img
-                className="h-6 w-fit dark:invert"
-                src="/tech/github-light.png"
-                alt="GitHub Logo"
-                height="24"
-                width="auto"
-              />
+              <Zap className="size-4" />
+              <h3 className="text-sm font-medium">Faaast</h3>
             </div>
             <p className="text-muted-foreground text-sm">
-              Version Control System untuk mengelola perubahan kode.
+              It supports an entire helping developers and innovate.
             </p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <img
-                className="h-4 mt-1 w-fit dark:invert"
-                src="/tech/vercel-light.png"
-                alt="OpenAI Logo"
-                height="24"
-                width="auto"
-              />
+              <Cpu className="size-4" />
+              <h3 className="text-sm font-medium">Powerful</h3>
             </div>
             <p className="text-muted-foreground text-sm">
               It supports an entire helping developers and businesses.
@@ -82,13 +72,8 @@ export default function HeroSection({
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <img
-                className="h-4 w-fit dark:invert"
-                src="/tech/tailwind-light.png"
-                alt="Tailwind CSS Logo"
-                height="16"
-                width="auto"
-              />
+              <Lock className="size-4" />
+              <h3 className="text-sm font-medium">Security</h3>
             </div>
             <p className="text-muted-foreground text-sm">
               It supports an helping developers businesses innovate.
@@ -96,13 +81,9 @@ export default function HeroSection({
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <img
-                className="h-4 w-fit dark:invert"
-                src="/tech/nextjs-light.png"
-                alt="Vercel Logo"
-                height="20"
-                width="auto"
-              />
+              <Sparkles className="size-4" />
+
+              <h3 className="text-sm font-medium">AI Powered</h3>
             </div>
             <p className="text-muted-foreground text-sm">
               It supports an helping developers businesses innovate.
