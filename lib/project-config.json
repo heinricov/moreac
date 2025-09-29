@@ -1,0 +1,372 @@
+{
+  "project": {
+    "name": "Moreac",
+    "fullName": "Moreac - Template Website Profesional",
+    "version": "1.0.0",
+    "description": "Template website profesional yang siap pakai untuk mengembangkan usaha Anda",
+    "longDescription": "Moreac menyediakan template website profesional yang siap pakai untuk mengembangkan usaha Anda. Template modern dengan teknologi Next.js, React, dan Tailwind CSS yang responsive, SEO-friendly, dan mudah dikustomisasi.",
+    "url": "https://moreac.com",
+    "logo": "/logo.png",
+    "favicon": "/favicon.ico",
+    "language": "id",
+    "locale": "id_ID",
+    "currency": "IDR",
+    "timezone": "Asia/Jakarta"
+  },
+  "company": {
+    "name": "Moreac",
+    "legalName": "Moreac Technology",
+    "description": "Perusahaan teknologi yang berfokus pada pengembangan template website profesional",
+    "founded": "2024",
+    "location": {
+      "country": "Indonesia",
+      "city": "Jakarta",
+      "address": "Jakarta, Indonesia"
+    },
+    "contact": {
+      "email": "hello@moreac.com",
+      "phone": "+62-xxx-xxx-xxxx",
+      "website": "https://moreac.com"
+    },
+    "social": {
+      "twitter": "@moreac",
+      "facebook": "https://facebook.com/moreac",
+      "instagram": "https://instagram.com/moreac",
+      "linkedin": "https://linkedin.com/company/moreac",
+      "github": "https://github.com/moreac-tech"
+    }
+  },
+  "seo": {
+    "defaultTitle": "Moreac - Template Website Profesional untuk Usaha Anda",
+    "titleTemplate": "%s | Moreac",
+    "defaultDescription": "Moreac menyediakan template website profesional yang siap pakai untuk mengembangkan usaha Anda. Template modern dengan teknologi Next.js, React, dan Tailwind CSS.",
+    "keywords": [
+      "template website",
+      "website template",
+      "nextjs template",
+      "react template",
+      "tailwind css",
+      "website profesional",
+      "template indonesia",
+      "moreac",
+      "website bisnis",
+      "template responsive"
+    ],
+    "verification": {
+      "google": "your-google-verification-code",
+      "yandex": "your-yandex-verification-code",
+      "yahoo": "your-yahoo-verification-code"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Template Website Profesional untuk Usaha Anda",
+      "description": "Dapatkan template website profesional yang siap pakai untuk mengembangkan usaha Anda. Template modern dengan teknologi Next.js, React, dan Tailwind CSS yang responsive dan SEO-friendly.",
+      "keywords": [
+        "template website profesional",
+        "website template indonesia",
+        "template bisnis online",
+        "website company profile",
+        "template responsive",
+        "nextjs template",
+        "react template",
+        "tailwind css template"
+      ],
+      "ogImage": "/og-home.jpg"
+    },
+    "products": {
+      "title": "Template Website Profesional - Fitur & Teknologi",
+      "description": "Jelajahi fitur-fitur lengkap template website profesional kami. Template modern dengan komponen UI yang lengkap, SEO-friendly, responsive, dan siap pakai untuk bisnis Anda.",
+      "keywords": [
+        "template website fitur",
+        "komponen UI template",
+        "template responsive",
+        "template SEO friendly",
+        "nextjs components",
+        "react components",
+        "tailwind css components",
+        "template teknologi"
+      ],
+      "ogImage": "/og-products.jpg"
+    },
+    "about": {
+      "title": "Tentang Kami - Moreac Team",
+      "description": "Kenali tim Moreac yang berdedikasi menciptakan template website profesional berkualitas tinggi. Kami menyediakan solusi digital terbaik untuk mengembangkan bisnis Anda.",
+      "keywords": [
+        "tentang moreac",
+        "tim moreac",
+        "developer template",
+        "web developer indonesia",
+        "template developer",
+        "moreac team",
+        "tentang perusahaan",
+        "profil perusahaan"
+      ],
+      "ogImage": "/og-about.jpg"
+    },
+    "contact": {
+      "title": "Hubungi Kami - Konsultasi Template Website",
+      "description": "Hubungi tim Moreac untuk konsultasi template website profesional. Dapatkan bantuan pemilihan template yang tepat untuk bisnis Anda dan dukungan teknis terbaik.",
+      "keywords": [
+        "hubungi moreac",
+        "konsultasi template",
+        "customer service",
+        "bantuan template",
+        "support template",
+        "kontak moreac",
+        "customer support",
+        "layanan pelanggan"
+      ],
+      "ogImage": "/og-contact.jpg"
+    },
+    "pricing": {
+      "title": "Harga Template Website - Paket Terbaik untuk Bisnis Anda",
+      "description": "Lihat paket harga template website profesional kami. Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Harga terjangkau dengan kualitas premium dan dukungan teknis lengkap.",
+      "keywords": [
+        "harga template website",
+        "paket template",
+        "harga website template",
+        "template murah",
+        "template premium",
+        "paket bisnis",
+        "harga terjangkau",
+        "template indonesia"
+      ],
+      "ogImage": "/og-pricing.jpg"
+    },
+    "download": {
+      "title": "Download Template Website - Panduan Lengkap",
+      "description": "Download template website profesional kami dengan panduan lengkap. Pelajari cara menggunakan template dengan mudah, mulai dari instalasi hingga deployment. Template siap pakai untuk bisnis Anda.",
+      "keywords": [
+        "download template website",
+        "panduan template",
+        "cara menggunakan template",
+        "instalasi template",
+        "deployment template",
+        "tutorial template",
+        "template guide",
+        "download gratis"
+      ],
+      "ogImage": "/og-download.jpg"
+    }
+  },
+  "content": {
+    "hero": {
+      "title": "Template Website Profesional untuk Mengembangkan Bisnis Anda",
+      "description": "Dapatkan template website profesional yang siap pakai untuk mengembangkan usaha Anda. Template modern dengan teknologi Next.js, React, dan Tailwind CSS yang responsive, SEO-friendly, dan mudah dikustomisasi.",
+      "cta": {
+        "primary": "Template",
+        "secondary": "Custom Website"
+      }
+    },
+    "features": {
+      "title": "Fitur-Fitur Unggulan Template Website Profesional Kami",
+      "description": "Template website profesional dengan fitur lengkap untuk mengembangkan bisnis Anda"
+    },
+    "cta": {
+      "title": "Siap Mengembangkan Bisnis Anda?",
+      "subtitle": "Mulai dengan Template Profesional",
+      "description": "Dapatkan template website profesional yang siap pakai untuk mengembangkan usaha Anda. Template modern, responsive, dan SEO-friendly.",
+      "buttons": {
+        "primary": "Mulai Sekarang",
+        "secondary": "Lihat Sample"
+      }
+    }
+  },
+  "product": {
+    "name": "Template Website Profesional Moreac",
+    "description": "Template website profesional yang siap pakai dengan teknologi Next.js, React, dan Tailwind CSS. Responsive, SEO-friendly, dan mudah dikustomisasi.",
+    "price": "299000",
+    "currency": "IDR",
+    "availability": "InStock",
+    "rating": {
+      "value": "4.9",
+      "count": "150"
+    },
+    "images": ["/product/product-1.png", "/product/product-1-d.png"],
+    "features": [
+      {
+        "key": "komponen-yang-digunakan",
+        "title": "Komponen yang digunakan",
+        "description": "Teridiri dari berbagai komponen yang digunakan pada masing - masing halaman, komponen yang mudah dikelola dan diubah.",
+        "image": "/charts.png"
+      },
+      {
+        "key": "halaman",
+        "title": "Halaman",
+        "description": "Teridiri dari berbagai halaman yang digunakan pada masing - masing halaman, halaman yang mudah dikelola dan diubah.",
+        "image": "/music.png"
+      },
+      {
+        "key": "nextjs-seo",
+        "title": "NextJS SEO",
+        "description": "Teridiri dari berbagai NextJS SEO yang digunakan pada masing - masing halaman, NextJS SEO yang mudah dikelola dan diubah.",
+        "image": "/mail2.png"
+      },
+      {
+        "key": "responsive-website",
+        "title": "Responsive Website",
+        "description": "Teridiri dari berbagai Responsive Website yang digunakan pada masing - masing halaman, Responsive Website yang mudah dikelola dan diubah.",
+        "image": "/payments.png"
+      },
+      {
+        "key": "json-data",
+        "title": "Json Data",
+        "description": "Teridiri dari berbagai Json Data yang digunakan pada masing - masing halaman, Json Data yang mudah dikelola dan diubah.",
+        "image": "/json.png"
+      }
+    ]
+  },
+  "tech": {
+    "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    "tools": [
+      {
+        "name": "Visual Studio Code",
+        "shortName": "VsCode",
+        "description": "Aplikasi IDE modern untuk mengedit kode dengan fitur lengkap dan ekstensi yang powerful.",
+        "downloadUrl": "https://code.visualstudio.com/",
+        "version": "Latest"
+      },
+      {
+        "name": "Node.js",
+        "shortName": "NodeJs",
+        "description": "Runtime JavaScript yang memungkinkan menjalankan JavaScript di server-side untuk aplikasi web.",
+        "downloadUrl": "https://nodejs.org/",
+        "version": "LTS"
+      },
+      {
+        "name": "GitHub",
+        "shortName": "Github",
+        "description": "Platform untuk mengelola kode sumber, kolaborasi tim, dan version control dengan Git.",
+        "downloadUrl": "https://github.com/",
+        "version": "Free"
+      }
+    ]
+  },
+  "download": {
+    "steps": [
+      {
+        "id": 1,
+        "title": "Download Template",
+        "description": "Download template yang sudah disediakan dalam format ZIP",
+        "details": [
+          "Klik tombol download untuk mendapatkan file ZIP",
+          "Extract file ZIP ke folder project Anda",
+          "Pastikan semua file ter-extract dengan benar"
+        ],
+        "code": "wget https://example.com/template.zip\nunzip template.zip\ncd template"
+      },
+      {
+        "id": 2,
+        "title": "Install Dependencies",
+        "description": "Install semua dependencies yang diperlukan untuk menjalankan project",
+        "details": [
+          "Buka terminal di folder project",
+          "Jalankan perintah: npm install",
+          "Tunggu hingga semua package ter-install"
+        ],
+        "code": "npm install"
+      },
+      {
+        "id": 3,
+        "title": "Setup Environment",
+        "description": "Konfigurasi environment variables dan pengaturan project",
+        "details": [
+          "Copy file .env.example menjadi .env.local",
+          "Isi environment variables sesuai kebutuhan",
+          "Konfigurasi database jika diperlukan"
+        ],
+        "code": "cp .env.example .env.local\n# Edit .env.local dengan konfigurasi Anda"
+      },
+      {
+        "id": 4,
+        "title": "Run Development Server",
+        "description": "Jalankan development server untuk melihat hasil",
+        "details": [
+          "Jalankan perintah: npm run dev",
+          "Buka browser dan akses http://localhost:3000",
+          "Template siap digunakan dan dikustomisasi"
+        ],
+        "code": "npm run dev"
+      },
+      {
+        "id": 5,
+        "title": "Customize & Deploy",
+        "description": "Kustomisasi template sesuai kebutuhan dan deploy ke production",
+        "details": [
+          "Edit komponen dan styling sesuai brand Anda",
+          "Update konten dan data sesuai kebutuhan",
+          "Deploy ke platform seperti Vercel, Netlify, atau hosting lainnya"
+        ],
+        "code": "# Deploy ke Vercel\nnpx vercel\n\n# Atau deploy ke Netlify\ngit push origin main"
+      }
+    ]
+  },
+  "sitemap": {
+    "baseUrl": "https://moreac.com",
+    "pages": [
+      {
+        "url": "/",
+        "priority": 1,
+        "changeFrequency": "weekly"
+      },
+      {
+        "url": "/products",
+        "priority": 0.9,
+        "changeFrequency": "weekly"
+      },
+      {
+        "url": "/products/download",
+        "priority": 0.8,
+        "changeFrequency": "monthly"
+      },
+      {
+        "url": "/about",
+        "priority": 0.7,
+        "changeFrequency": "monthly"
+      },
+      {
+        "url": "/contact",
+        "priority": 0.6,
+        "changeFrequency": "monthly"
+      },
+      {
+        "url": "/pricing",
+        "priority": 0.8,
+        "changeFrequency": "weekly"
+      }
+    ]
+  },
+  "manifest": {
+    "name": "Moreac - Template Website Profesional",
+    "shortName": "Moreac",
+    "description": "Template website profesional yang siap pakai untuk mengembangkan usaha Anda",
+    "startUrl": "/",
+    "display": "standalone",
+    "backgroundColor": "#ffffff",
+    "themeColor": "#000000",
+    "categories": ["business", "productivity", "utilities"],
+    "lang": "id",
+    "orientation": "portrait-primary"
+  },
+  "images": {
+    "og": {
+      "default": "/og-image.jpg",
+      "home": "/og-home.jpg",
+      "products": "/og-products.jpg",
+      "about": "/og-about.jpg",
+      "contact": "/og-contact.jpg",
+      "pricing": "/og-pricing.jpg",
+      "download": "/og-download.jpg"
+    },
+    "icons": {
+      "favicon": "/favicon.ico",
+      "icon192": "/icon-192.png",
+      "icon512": "/icon-512.png"
+    },
+    "product": {
+      "main": "/product/product-1.png",
+      "dark": "/product/product-1-d.png"
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, CirclePlay } from "lucide-react";
 import Image from "next/image";
+import { getContentConfig, getProjectInfo } from "@/lib/config";
 
 interface HeroSectionProps {
   title?: string;
@@ -10,9 +11,11 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ title, description }: HeroSectionProps) {
-  const DEFAULT_TITLE = "Buat Usaha Anda Lebih Mudah Di Temukan";
-  const DEFAULT_DESCRIPTION =
-    "Explore a collection of Shadcn UI blocks and components, ready to preview and copy. Streamline your development workflow with easy-to-implement examples.";
+  const content = getContentConfig();
+  const project = getProjectInfo();
+
+  const DEFAULT_TITLE = content.hero.title;
+  const DEFAULT_DESCRIPTION = content.hero.description;
 
   return (
     <>
@@ -31,8 +34,10 @@ export default function HeroSection({ title, description }: HeroSectionProps) {
 
                   <div className="flex items-center gap-3">
                     <Button asChild size="lg" className="pr-4.5">
-                      <Link href="#link">
-                        <span className="text-nowrap">Tempalte</span>
+                      <Link href="/products">
+                        <span className="text-nowrap">
+                          {content.hero.cta.primary}
+                        </span>
                         <ChevronRight className="opacity-50" />
                       </Link>
                     </Button>
@@ -43,9 +48,11 @@ export default function HeroSection({ title, description }: HeroSectionProps) {
                       variant="outline"
                       className="pl-5"
                     >
-                      <Link href="#link">
+                      <Link href="/contact">
                         <CirclePlay className="fill-primary/25 stroke-primary" />
-                        <span className="text-nowrap">Custom Website</span>
+                        <span className="text-nowrap">
+                          {content.hero.cta.secondary}
+                        </span>
                       </Link>
                     </Button>
                   </div>
@@ -57,8 +64,10 @@ export default function HeroSection({ title, description }: HeroSectionProps) {
               <div className="before:border-foreground/5 before:bg-foreground/5 relative h-full before:absolute before:-inset-x-4 before:bottom-7 before:top-0 before:skew-x-6 before:rounded-[calc(var(--radius)+1rem)] before:border">
                 <div className="bg-background rounded-(--radius) shadow-foreground/10 ring-foreground/5 relative h-full -translate-y-12 skew-x-6 overflow-hidden border border-transparent shadow-md ring-1">
                   <Image
-                    src="/product/product-1.png"
-                    alt="app screen"
+                    src={
+                      project.images?.product?.main || "/product/product-1.png"
+                    }
+                    alt={`${project.fullName} - Dashboard Preview`}
                     width="2880"
                     height="1842"
                     className="object-top-left size-full object-cover"

@@ -10,6 +10,7 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
+import { getContentConfig } from "@/lib/config";
 
 const MESCHAC_AVATAR = "https://avatars.githubusercontent.com/u/47919550?v=4";
 const BERNARD_AVATAR = "https://avatars.githubusercontent.com/u/31113941?v=4";
@@ -17,14 +18,19 @@ const THEO_AVATAR = "https://avatars.githubusercontent.com/u/68236786?v=4";
 const GLODIE_AVATAR = "https://avatars.githubusercontent.com/u/99137927?v=4";
 
 export default function FeaturesSection() {
+  const content = getContentConfig();
+
   return (
     <section>
       <div className="py-24">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div>
             <h2 className="text-foreground max-w-2xl text-balance text-4xl font-semibold">
-              Feature - Feature Yang Bisa Anda Miliki Untuk Usaha Anda
+              {content.features.title}
             </h2>
+            <p className="text-muted-foreground mt-4 text-lg">
+              {content.features.description}
+            </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden p-6">
